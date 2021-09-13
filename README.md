@@ -10,13 +10,18 @@ Aplicação desevolvida como parte do processo seletivo para o Programa de Está
 
 * Aplicação desenvolvida em PHP com o framework MVC CakePHP;
 * Funcionalidades:
-   * Botão Cadastrar funcionando;
-   * Lista de Candidatos dinâmica funcionando;
-   * Botões de Ação (Edit e Delete) funcionando;
-   * Campo de Busca funcionando (pressionando enter ou clicando na lupa);
-   * Consumo da API Viacep funcionando (na modal de Adicionar e na de editar);
+   * Botão Cadastrar funcionando para surgimento da modal;
+   * Botões Salvar, cancelar e fechar da modal Adicionar funcionando;
+   * Botões de Ação (Edit e Delete) na index funcionando para surgimento das modais;
+   * Botões Salvar, cancelar e fechar da modal Editar funcionando;
+   * Botões Excluir, cancelar e fechar da modal Excluir funcionando (aplicando soft delete);
+   * Implantado Delete Lógico (soft delete), porém, a função Delete Físico (hard delete) está pronta e comentada na controller;
+   * Lista de Candidatos dinâmica na index funcionando;
+   * Campo de Busca por nome da index funcionando (pressionando enter ou clicando na lupa);
+   * Consumo da API Viacep funcionando (na modal de Adicionar e na de Editar);
    * Implantada Paginação. Limite de Registros default: 5;
-   * Implantada Action de Delete Lógico (soft delete), porém, a função Delete físico (hard delete) está pronta e comentada na controller, caso essa seja a necessidade do projeto.
+   * Paginação pode ser ordenada por ID (padrão), Nome ou Idade;
+   * Select de quantidade de registros colocada no front, porém, sem funcionaliadde.
    
 
 
@@ -32,7 +37,6 @@ Aplicação desevolvida como parte do processo seletivo para o Programa de Está
    1. Diretório app/View/Candidatos/index.ctp
    2. Diretório app/View/Candidatos/edit.ctp
    3. Diretório app/View/Candidatos/delete.ctp
-   4. Diretório app/View/Candidatos/index.ctp
    5. Diretório app/View/Elements/erro.ctp
    6. Diretório app/View/Elements/info.ctp
    7. Diretório app/View/Elements/success.ctp
