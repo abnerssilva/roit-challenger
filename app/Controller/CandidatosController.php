@@ -25,10 +25,11 @@ class CandidatosController extends AppController {
 		$idNovoCandidato = $idCandidado['Candidato']['id'] + 1;
 
         // Organização da Paginação
+		$limite = 5;
         $this->paginate = array(
             'fields' => 'Candidato.*',
             'conditions' => "Candidato.status = 1".$where,
-            'limit' => 5,
+            'limit' => $limite,
             'order' => array('Candidato.id' => 'asc')
         );
 

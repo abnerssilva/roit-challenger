@@ -185,7 +185,26 @@ echo "</table>";
 // pagination section
 echo "<div class='d-block'>";
 	echo "<div class='row d-flex'>";
-		echo "<div class='col-md-6'>";
+		echo "<div class='col-md-1 justify-content-center'>";
+			echo $this->Form->input('', array(
+				'label' => false,
+				'type' => 'select',
+				'options' => array(
+					'1' => '5',
+					'2' => '50',
+					'3' => '100',
+				),
+				'value' => $this->params['url']['limite'],
+				'name' => 'limite',
+				'id' => 'limite',
+				'class' => 'form-control-plaintext py-0 px-4 list-group',
+				'style' => 'border: 1px solid #DFE3E6; border-radius: 6px;'
+				)
+			);
+		echo "</div>";
+
+		echo "<div class='col-md-5 pl-0'>";
+
 		echo $this->Paginator->counter(
 			'Exibindo {:start} - {:end} de {:count} registros.'
 		);
