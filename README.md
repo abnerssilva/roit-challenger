@@ -20,7 +20,7 @@ Aplicação desevolvida como parte do processo seletivo para o Programa de Está
    * Campo de Busca por nome da index funcionando (pressionando enter ou clicando na lupa);
    * Consumo da API Viacep funcionando (na modal de Adicionar e na de Editar);
    * Implantada Paginação. Limite de Registros default: 5;
-   * Paginação pode ser ordenada por ID (padrão), Nome ou Idade;
+   * Paginação pode ser ordenada por ID, Nome, Idade ou GitHub user;
    * Select de quantidade de registros colocada no front, porém, sem funcionaliadde.
    
 
